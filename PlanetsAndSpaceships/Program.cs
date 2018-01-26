@@ -14,10 +14,16 @@ namespace PlanetsAndSpaceships
             planetList.Add("Jupiter");
             planetList.Add("Saturn");
 
-            foreach (var planet in planetList)
+
+            List<string> lastTwoPlanets = new List<string>() { "Uranus", "Neptune"};
+
+            planetList.AddRange(lastTwoPlanets);
+
+            foreach (var item in planetList)
             {
-                Console.WriteLine(planet);
+                Console.WriteLine(item);
             }
+
             Console.Read();
         }
     }
